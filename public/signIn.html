@@ -51,15 +51,16 @@
         <!-- navBar for mobile end here -->
 
         <!-- form for desktop start here-->
-    <form method="post" action="../src/save.php" class="hidden sm:block container mt-10">
+    <form method="post" action="../save.php" class="hidden sm:block container mt-10">
         <section class="flex justify-between gap-x-20">
-        <section class="w-1/2 mr-10 gap-y-5 flex flex-col justify-center">
+        <section class="w-1/2 mr-10 gap-y-3 flex flex-col justify-center">
             <div class="flex flex-col gap-y-3 mb-5">
             <h1 class="font-black text-3xl text-sky-500 mr-16">روش ارسال پیام</h1>
             <p class="w-96 mr-16">
                 برای ارسال پیام به من ، ابتدا نام خود را وارد کرده و سپس متن پیام را می نویسید
                 <br>
                 پس از پر کردن کادر ها بر روی گزینه ارسال کلیک کرده تا پیام شما به من ارسال شود 
+                <br>
             </p>
             </div>
             
@@ -83,7 +84,7 @@
 
     <!-- form for mobile start here -->
 
-    <form action="" class="container mt-10 block sm:hidden">
+    <form method="post" action="../save.php" class="container mt-10 block sm:hidden">
         <section class="flex flex-col gap-y-10 mb-5">
             <div>
                 <img src="../assets/images/Send.png" alt="Send">
@@ -94,15 +95,17 @@
                 برای ارسال پیام به من ، ابتدا نام خود را وارد کرده و سپس متن پیام را می نویسید
                 <br>
                 پس از پر کردن کادر ها بر روی گزینه ارسال کلیک کرده تا پیام شما به من ارسال شود 
+                <br>
+                <span class="text-rose-500">نکته : همواره نظرات خود را برای من بنویسید و در صورت داشتن سوال از راه های ارتباط با من استفاده کنید</span>
             </p>
             </div>
             <div>
                 <label for="#" class="mr-5">نام :</label>
-                <input type="text" id="fullName2" class="mr-4 border border-gray-500  rounded-lg p-1 w-64 h-20 focus:outline-none" placeholder="محمد فراز امدادی">
+                <input name="usernanme" type="text" id="fullName" class="mr-4 border border-gray-500  rounded-lg p-1 w-64 h-20 focus:outline-none" placeholder="محمد فراز امدادی">
             </div>
             <div class="-mt-5">
                 <label for="#">متن پیام :</label>
-                <input type="text" id="text2" class="border border-gray-500  rounded-lg p-1 w-64 h-20 focus:outline-none" placeholder="یک سوالی برام پیش اومد ، آیا...">
+                <input name="useremail" type="text" id="text" class="border border-gray-500  rounded-lg p-1 w-64 h-20 focus:outline-none" placeholder="یک سوالی برام پیش اومد ، آیا...">
             </div>
             <input type="submit" onclick="MyFunction()" value="ارسال" class="bg-sky-500 mr-20 cursor-pointer p-2 w-40 text-white rounded-lg"> 
         </section>
